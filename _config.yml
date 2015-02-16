@@ -1,0 +1,9 @@
+jekyll_var:
+  include:
+    - source
+    - public
+    - plugins
+    - title
+    - url
+  exclude:
+    - source
