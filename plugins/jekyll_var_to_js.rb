@@ -50,7 +50,7 @@ module Jekyll
       end
       @include = @include== nil ? [] : @include
       @exclude = @exclude== nil ? [] : @exclude
-      script="<script>jekyll_var=function(i,j){if(j!=\"page\" && i in jekyll_var.site)return jekyll_var.site[i];else if(j!=\"site\" && i in jekyll_var.page)return jekyll_var.page[i];else return null;};"
+      script="<script>jekyll_var=function(i,j){if(j!=\"site\" && i in jekyll_var.page)return jekyll_var.page[i];else if(j!=\"page\" && i in jekyll_var.site)return jekyll_var.site[i];else return null;};"
       script+="jekyll_var[\"site\"]="+parse(site.config)+";"
       site.posts.each { |page|
         s=script
