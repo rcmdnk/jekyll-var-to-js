@@ -1,7 +1,8 @@
 # jekyll-var-to-js
+
 Plugin to transfer Octopress (Jekyll) configuration variables to JavaScript
 
-# Installation at Octopress
+## Installation at Octopress
 
 1. Copy `plugins/footnote_inline`
    to your `plugins` directory.
@@ -12,7 +13,7 @@ Plugin to transfer Octopress (Jekyll) configuration variables to JavaScript
 {{if page.jekyll_var}}{{page.jekyll_var}}{{endif%}}
 ```
 
-# Configuration
+## Configuration
 
 If you don't have `jekyll_var` configuration in your **_config.yml**,
 this plugin transfers all configuration variables of `site` and `page`
@@ -58,7 +59,7 @@ and `page` related variables (defined in such YAML block) are stored in `jekyll_
 Note: Some variables, such `page.url`, can not be used
 as it seems these variables are stored after Generator plugins.
 
-# Usage
+## Usage
 
 From your scripts, use like:
 
