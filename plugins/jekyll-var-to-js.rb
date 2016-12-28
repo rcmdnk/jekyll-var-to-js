@@ -52,7 +52,7 @@ module Jekyll
       @exclude = @exclude== nil ? [] : @exclude
       script="<script>jekyll_var=function(i,j){if(j!=\"site\" && i in jekyll_var.page)return jekyll_var.page[i];else if(j!=\"page\" && i in jekyll_var.site)return jekyll_var.site[i];else return null;};"
       script+="jekyll_var[\"site\"]="+parse(site.config)+";"
-      site.posts.each do |page|
+      site.posts.docs.each do |page|
         s=script
         s+="jekyll_var[\"page\"]="+parse(page.data)+";</script>"
         page.data.merge!("jekyll_var" => s)
