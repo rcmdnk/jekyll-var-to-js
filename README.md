@@ -9,8 +9,8 @@ Plugin to transfer Octopress (Jekyll) configuration variables to JavaScript
 
 1. Add following line at the top of `<head>` section in **source/_includes/head.html**.
 
-```yaml
-{{if page.jekyll_var}}{{page.jekyll_var}}{{endif%}}
+```html
+{% if page.jekyll_var %}{{page.jekyll_var}}{% endif %}
 ```
 
 ## Configuration

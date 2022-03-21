@@ -36,7 +36,7 @@ module Jekyll
     def generate(site)
       if site.config.has_key?("jekyll_var") and site.config["jekyll_var"].has_key?("include")
         if String === site.config["jekyll_var"]["include"]
-          @include =  site.config["jekyll_var"]["include"]
+          @include = [site.config["jekyll_var"]["include"]]
         else
           @include = site.config["jekyll_var"]["include"]
         end
