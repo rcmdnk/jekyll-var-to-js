@@ -47,7 +47,7 @@ The plugin produce a script like:
     else if(j!="site" && i in jekyll_var.page)return jekyll_var.page[i];
     else return null;
   };
-  jekyll_var["site"]={url:"http://yoursite.com",title:"My Octopress Blog",author:"Your Name",};
+  jekyll_var["site"]={url:"http://example.com",title:"My Octopress Blog",author:"Your Name",};
   jekyll_var["page"]={title:"hoge",};
 </script>
 ```
